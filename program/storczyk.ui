@@ -1,0 +1,654 @@
+<ui version="4.0" >
+ <class>Okno</class>
+ <widget class="QMainWindow" name="Okno" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>745</width>
+    <height>636</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>55</y>
+     <width>745</width>
+     <height>562</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" >
+    <item>
+     <widget class="QScrollArea" name="scrollArea" >
+      <property name="widgetResizable" >
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>551</width>
+         <height>429</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" >
+      <item>
+       <widget class="QGroupBox" name="groupBox" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+          <horstretch>0</horstretch>
+          <verstretch>2</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize" >
+         <size>
+          <width>180</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>180</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title" >
+         <string>Sterowanie</string>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget" >
+         <property name="geometry" >
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>161</width>
+           <height>321</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2" >
+          <property name="sizeConstraint" >
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <spacer name="verticalSpacer" >
+            <property name="orientation" >
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType" >
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0" >
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize" >
+             <size>
+              <width>105</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="title" >
+             <string>Tryb edycji</string>
+            </property>
+            <widget class="QPushButton" name="pushObrysNerwu" >
+             <property name="geometry" >
+              <rect>
+               <x>8</x>
+               <y>20</y>
+               <width>71</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>41</height>
+              </size>
+             </property>
+             <property name="font" >
+              <font>
+               <pointsize>9</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet" >
+              <string notr="true" >color:rgb(0, 170, 127)</string>
+             </property>
+             <property name="text" >
+              <string>Obrys
+nerwu</string>
+             </property>
+             <property name="icon" >
+              <iconset resource="storczyk.qrc" >
+               <normaloff>:/icons/NO16.png</normaloff>
+               <normalon>:/icons/OK16.png</normalon>:/icons/NO16.png</iconset>
+             </property>
+             <property name="checkable" >
+              <bool>true</bool>
+             </property>
+             <property name="checked" >
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive" >
+              <bool>true</bool>
+             </property>
+             <property name="flat" >
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushObrysLiscia" >
+             <property name="geometry" >
+              <rect>
+               <x>84</x>
+               <y>20</y>
+               <width>71</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>41</height>
+              </size>
+             </property>
+             <property name="font" >
+              <font>
+               <pointsize>9</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet" >
+              <string notr="true" >color:rgb(0, 170, 127)</string>
+             </property>
+             <property name="text" >
+              <string>Obrys
+liścia</string>
+             </property>
+             <property name="icon" >
+              <iconset resource="storczyk.qrc" >
+               <normaloff>:/icons/NO16.png</normaloff>
+               <normalon>:/icons/OK16.png</normalon>:/icons/NO16.png</iconset>
+             </property>
+             <property name="checkable" >
+              <bool>true</bool>
+             </property>
+             <property name="checked" >
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive" >
+              <bool>true</bool>
+             </property>
+             <property name="flat" >
+              <bool>false</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize" >
+         <size>
+          <width>180</width>
+          <height>180</height>
+         </size>
+        </property>
+        <property name="title" >
+         <string>Wyniki</string>
+        </property>
+        <widget class="QLabel" name="labelDNerwu" >
+         <property name="geometry" >
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font" >
+          <font>
+           <family>Verdana</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Długość nerwu</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelDKrawedzi" >
+         <property name="geometry" >
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font" >
+          <font>
+           <family>Verdana</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Długość krawędzi</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelKretosc" >
+         <property name="geometry" >
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font" >
+          <font>
+           <family>Verdana</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Krętość</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditDNerwu" >
+         <property name="geometry" >
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font" >
+          <font>
+           <family>Verdana</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="readOnly" >
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditDKrawedzi" >
+         <property name="geometry" >
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font" >
+          <font>
+           <family>Verdana</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="readOnly" >
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditKretosc" >
+         <property name="geometry" >
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font" >
+          <font>
+           <family>Verdana</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="readOnly" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>745</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Plik" >
+    <property name="title" >
+     <string>&amp;Projekt</string>
+    </property>
+    <addaction name="actNowyProjekt" />
+    <addaction name="actOtworzProjekt" />
+    <addaction name="actZapiszProjekt" />
+    <addaction name="separator" />
+    <addaction name="actionKoniec" />
+   </widget>
+   <widget class="QMenu" name="menu_Zdj_cie" >
+    <property name="title" >
+     <string>&amp;Zdjęcie</string>
+    </property>
+    <widget class="QMenu" name="menuEksport" >
+     <property name="enabled" >
+      <bool>true</bool>
+     </property>
+     <property name="title" >
+      <string>&amp;Eksport</string>
+     </property>
+     <addaction name="actionPNG" />
+     <addaction name="actionPDF" />
+     <addaction name="actionSVG" />
+    </widget>
+    <addaction name="actionOtworzZdjecie" />
+    <addaction name="actZapiszZdjecie" />
+    <addaction name="separator" />
+    <addaction name="actionDrukuj" />
+    <addaction name="menuEksport" />
+    <addaction name="separator" />
+   </widget>
+   <widget class="QMenu" name="menu_Pomoc" >
+    <property name="title" >
+     <string>Pomo&amp;c</string>
+    </property>
+    <addaction name="actionOProgramie" />
+    <addaction name="actionOQt" />
+   </widget>
+   <widget class="QMenu" name="menu_Widok" >
+    <property name="title" >
+     <string>&amp;Widok</string>
+    </property>
+    <addaction name="actionPowieksz" />
+    <addaction name="actionZmniejsz" />
+    <addaction name="actionOryginalny" />
+   </widget>
+   <addaction name="menu_Plik" />
+   <addaction name="menu_Zdj_cie" />
+   <addaction name="menu_Widok" />
+   <addaction name="menu_Pomoc" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>617</y>
+     <width>745</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>21</y>
+     <width>745</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="windowTitle" >
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOtworzZdjecie" />
+   <addaction name="actZapiszZdjecie" />
+   <addaction name="separator" />
+   <addaction name="actionDrukuj" />
+   <addaction name="actionPDF" />
+   <addaction name="actionSVG" />
+  </widget>
+  <action name="actOtworzProjekt" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="text" >
+    <string>&amp;Otwórz</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="actZapiszProjekt" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="text" >
+    <string>&amp;Zapisz</string>
+   </property>
+  </action>
+  <action name="actionOtworzZdjecie" >
+   <property name="icon" >
+    <iconset resource="storczyk.qrc" >
+     <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Otwórz</string>
+   </property>
+   <property name="toolTip" >
+    <string>Otwórz zdjęcie</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actZapiszZdjecie" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="storczyk.qrc" >
+     <normaloff>:/icons/save.png</normaloff>:/icons/save.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Zapisz</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionOProgramie" >
+   <property name="text" >
+    <string>&amp;O programie</string>
+   </property>
+   <property name="shortcut" >
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionOQt" >
+   <property name="text" >
+    <string>O &amp;Qt</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+F1</string>
+   </property>
+  </action>
+  <action name="actionDrukuj" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="storczyk.qrc" >
+     <normaloff>:/icons/print.png</normaloff>:/icons/print.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Drukuj</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionPDF" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="storczyk.qrc" >
+     <normaloff>:/icons/print_pdf.png</normaloff>:/icons/print_pdf.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;PDF</string>
+   </property>
+  </action>
+  <action name="actionSVG" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="storczyk.qrc" >
+     <normaloff>:/icons/print_svg.png</normaloff>:/icons/print_svg.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;SVG</string>
+   </property>
+  </action>
+  <action name="actionPNG" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="text" >
+    <string>PN&amp;G</string>
+   </property>
+  </action>
+  <action name="actionKoniec" >
+   <property name="text" >
+    <string>&amp;Koniec</string>
+   </property>
+   <property name="toolTip" >
+    <string>Kończy program</string>
+   </property>
+   <property name="statusTip" >
+    <string>Koniec programu</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actNowyProjekt" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="storczyk.qrc" >
+     <normaloff>:/icons/new.png</normaloff>:/icons/new.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Nowy</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="actionRozmiar" >
+   <property name="text" >
+    <string>Rozmiar</string>
+   </property>
+  </action>
+  <action name="actionPowieksz" >
+   <property name="text" >
+    <string>&amp;Powiększ</string>
+   </property>
+   <property name="shortcut" >
+    <string>+</string>
+   </property>
+  </action>
+  <action name="actionZmniejsz" >
+   <property name="text" >
+    <string>&amp;Zmniejsz</string>
+   </property>
+   <property name="shortcut" >
+    <string>-</string>
+   </property>
+  </action>
+  <action name="actionOryginalny" >
+   <property name="text" >
+    <string>&amp;Oryginalny</string>
+   </property>
+   <property name="shortcut" >
+    <string>=</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="storczyk.qrc" />
+ </resources>
+ <connections/>
+</ui>

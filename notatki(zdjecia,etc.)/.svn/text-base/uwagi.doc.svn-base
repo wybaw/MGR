@@ -1,0 +1,31 @@
+﻿Wykorzystaj:
+	- Dokowanie okien (130str .the art of building application)
+	-zapisywanie ustawien uzytkownika ( ustawienie okien , Splitterow !!!)
+	- modal dialog( dialog freeze main application )
+	- Composition Model .str 312 . Ustalanie jasnosci obrazu 
+
+Tworzenie Wizarda(str 269 .) krotki przewodnik po programie , wybranie poczatkowych opcji itd. moze byc przydatne przy mgr.
+Wizard jest klasa typu QWidgetStack zawierajaca wszystkie strony(elementy ?) .kazda strona jest osobnym QWidgetem mogacym zawierac inne widgety i elementy
+
+
+Stronki z extra widgetami:
+http://qwt.sf.net
+http://www.wysota.eu.org/wwwidgets
+
+Wstepny plan aplikacji :
+1.Wczytywanie zdjec w roznych formatach
+2.Obrysowywanie:
+		-rozpoznawanie ksztaltow ? automatyczny wstepny obrys ? 
+		-zwykly pedzel (rozne grubosci , kolory etc)
+3.Obliczenia .
+
+Wstepny plan pracy pisemnej .
+
+1.O Qt.
+2.Opis testow jednostkowych wykorzystanych(!!!!!!!!!!!!!!!) w trakcie pisania aplikacji . Notka o tym najnowoczesniejszym stylu pisania programow.
+3.Manual samej aplikacji.
+
+
+		
+
+
