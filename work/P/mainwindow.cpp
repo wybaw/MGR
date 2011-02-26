@@ -19,7 +19,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionClose,SIGNAL(triggered()),qApp,SLOT(quit()));
     connect(ui->actionAboutQt,SIGNAL(triggered()),qApp,SLOT(aboutQt()));
 
-//Dasdoanfr;iebfe
+//Dasdoanfr;iebfesas sadsa
+
 }
 
 MainWindow::~MainWindow()
