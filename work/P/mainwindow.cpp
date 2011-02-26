@@ -7,15 +7,18 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowTitle(tr("CellViewer"));
-    resize(QSize(800,600));
+    ui->toolBar->addAction(ui->actionOpen);
+
 
     label = new QLabel;
     label->setBackgroundRole(QPalette::Base);
-    label->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
     ui->scrollArea->setWidget(label);
-    //label->setScaledContents(true);
 
-    connect(ui->pushButton,SIGNAL(clicked()),this,SLOT(openFile()));
+
+    connect(ui->actionOpen,SIGNAL(triggered()),this,SLOT(openFile()));
+    connect(ui->actionClose,SIGNAL(triggered()),qApp,SLOT(quit()));
+    connect(ui->actionAboutQt,SIGNAL(triggered()),qApp,SLOT(aboutQt()));
+
 
 }
 
