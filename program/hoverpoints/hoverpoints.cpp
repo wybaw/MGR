@@ -47,7 +47,6 @@
 
 //#include "arthurwidgets.h"
 
-#include <qDebug>
 
 #include <cmath>
 

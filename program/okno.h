@@ -19,28 +19,28 @@ public:
 	Okno(QWidget * parent);
 
 protected:
-	void paintEvent ( QPaintEvent * event );
+//	void paintEvent ( QPaintEvent * event );
 
 private slots:
-	void on_actionOProgramie_triggered(bool);
-	void on_actionOQt_triggered(bool);
-	void on_actionOtworzZdjecie_triggered(bool);
-	void on_actionZmniejsz_triggered(bool);
-	void on_actionPowieksz_triggered(bool);
-	void on_actionOryginalny_triggered(bool);
+//	void on_actionOProgramie_triggered(bool);
+//	void on_actionOQt_triggered(bool);
+//	void on_actionOtworzZdjecie_triggered(bool);
+//	void on_actionZmniejsz_triggered(bool);
+//	void on_actionPowieksz_triggered(bool);
+//	void on_actionOryginalny_triggered(bool);
 
 //	void on_pushObrysNerwu_toggled(bool);
 
-	void zmianaPunktow(double nerw, double brzeg);
-	void gotowyDoEdycji(bool stan);
+//	void zmianaPunktow(double nerw, double brzeg);
+//	void gotowyDoEdycji(bool stan);
 
 signals:
-	void reset();
+//	void reset();
 
 private:
-	void _skalujObrazek(const double x);
-	void _dostosujPasekPrzewijania(QScrollBar* scrollBar, double x);
-	void _ustawSkale(double x);
+//	void _skalujObrazek(const double x);
+//	void _dostosujPasekPrzewijania(QScrollBar* scrollBar, double x);
+//	void _ustawSkale(double x);
 
 private:
 	double _skala;

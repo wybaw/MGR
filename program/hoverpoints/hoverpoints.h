@@ -46,7 +46,7 @@
 
 
 #include <QtGui>
-
+#include <QDebug>
 
 #define QT_NO_DEBUG_OUTPUT
 

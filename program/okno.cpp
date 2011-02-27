@@ -28,7 +28,7 @@ Okno::Okno(QWidget * parent)
     _zdjecie->setScaledContents(true);
     scrollArea->setWidget(_zdjecie);
 
-
+/*
     QPolygonF points;
 //    points << QPointF(_zdjecie->sizeHint().width()/2, _zdjecie->sizeHint().height()/2);
 
@@ -51,9 +51,9 @@ Okno::Okno(QWidget * parent)
 
 	connect (this, SIGNAL(reset()), _hoverPoints, SLOT(reset()));
 
-	connect (actionKoniec, SIGNAL(triggered()), qApp, SLOT(quit()));
+        connect (actionKoniec, SIGNAL(triggered()), qApp, SLOT(quit()));*/
 }
-
+/*
 void Okno::on_actionZmniejsz_triggered(bool)
 {
 	_skalujObrazek(0.8);
@@ -217,3 +217,4 @@ void Okno::paintEvent ( QPaintEvent * event )
 {
 	 setCursor(Qt::ArrowCursor);
 }
+*/
