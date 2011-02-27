@@ -18,10 +18,22 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionOpen,SIGNAL(triggered()),this,SLOT(openFile()));
     connect(ui->actionClose,SIGNAL(triggered()),qApp,SLOT(quit()));
     connect(ui->actionAbout_Qt,SIGNAL(triggered()),qApp,SLOT(aboutQt()));
-
+    connect(ui->ScreenshotButton,SIGNAL(clicked()),this,SLOT(takeScreenshot()));
 
 }
+void MainWindow::takeScreenshot()
+{
+    screenshot = label->pixmap();
 
+    if(screenshot)
+    {
+        screenshot->save("screenshot222.png","PNG");
+    }
+    else
+    {
+        qFatal("Failure in taking screenshot");
+    }
+}
 MainWindow::~MainWindow()
 {
     delete ui;
