@@ -9,13 +9,19 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setWindowTitle(tr("CellViewer"));
     ui->toolBar->addAction(ui->actionOpen);
+
     //main label ,where graphic files are shown
-    label = new QLabel;
+    label = new QLabel();
+    label->resize(0,0);
     label->setBackgroundRole(QPalette::Base);    
+    //label->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
+    label->setScaledContents(true);
     ui->scrollArea->setWidget(label);
 
 
 
+
+    //connection section
     connect(ui->actionOpen,SIGNAL(triggered()),this,SLOT(openFile()));
     connect(ui->actionClose,SIGNAL(triggered()),qApp,SLOT(quit()));
     connect(ui->actionAbout_Qt,SIGNAL(triggered()),qApp,SLOT(aboutQt()));

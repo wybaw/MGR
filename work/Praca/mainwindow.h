@@ -11,7 +11,7 @@
 #include <QPrintDialog>
 #include <QPainter>
 #include <QPlastiqueStyle>
-
+#include <QDesktopWidget>
 
 
 
