@@ -66,6 +66,7 @@
     </property>
     <addaction name="actionOpen"/>
     <addaction name="separator"/>
+    <addaction name="actionPrint"/>
     <addaction name="actionClose"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
@@ -102,6 +103,16 @@
   <action name="actionAbout_Qt">
    <property name="text">
     <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionExport_to_PDF">
+   <property name="text">
+    <string>Export to PDF</string>
    </property>
   </action>
  </widget>

@@ -7,6 +7,14 @@
 #include <QImage>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QPrinter>
+#include <QPrintDialog>
+#include <QPainter>
+#include <QPlastiqueStyle>
+
+
+
+
 namespace Ui {
     class MainWindow;
 }
@@ -21,11 +29,13 @@ public:
 public slots:
     void openFile();
     void takeScreenshot();
-
+    void print();
 private:
     Ui::MainWindow *ui;
     QLabel * label;
     const QPixmap* screenshot;
+    QPixmap* image;
+    QString fileName;
 };
 
 #endif // MAINWINDOW_H
